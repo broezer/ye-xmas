@@ -6,7 +6,9 @@ body {
 	background: #000;
   height:100vh;
   width:100vw;
+	margin:0;
   overflow:none;
+	position: relative;
 }
 
 .canvas-wrap {
@@ -41,6 +43,8 @@ body {
   width:100%;
 }
 
+
+
 @-webkit-keyframes kanye-move{
   0%{transform: translate3d(0, 0, 0) scale(1)}
   4%{transform:scale(2)}
@@ -52,6 +56,49 @@ body {
   75%{transform: translate3d(-3vw,3vw, 0)}
   100%{transform: translate3d(0, 0, 0) scale(1)}
 }
+
+.line-01{
+	background:red;
+	height:2vw;
+	width:100vw;
+	position: absolute;
+	top:100vh;
+	left:0;
+	z-index:-1;
+	-webkit-filter: blur(2px);
+	-webkit-animation-name: line-01-move;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.line-02{
+	background:white;
+	height:2vw;
+	width:100vw;
+	position: absolute;
+	top:-10vh;
+	left:0;
+	z-index:-1;
+	-webkit-filter: blur(2px);
+	-webkit-animation-name: line-02-move;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes line-01-move{
+  0%{transform: translateY(0))}
+	50%{transform: translateY(-110vh)}
+  100%{transform: translateY(0)}
+}
+
+@-webkit-keyframes line-02-move{
+  0%{transform: translateY(0))}
+	50%{transform: translateY(110vh)}
+  100%{transform: translateY(0)}
+}
+
 
 .future-cop {
   position: absolute;
