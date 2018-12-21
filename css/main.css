@@ -59,7 +59,7 @@ body {
 
 .line-01{
 	background:red;
-	height:2vw;
+	height:20vw;
 	width:100vw;
 	position: absolute;
 	top:100vh;
@@ -74,7 +74,7 @@ body {
 
 .line-02{
 	background:white;
-	height:2vw;
+	height:20vw;
 	width:100vw;
 	position: absolute;
 	top:-10vh;
